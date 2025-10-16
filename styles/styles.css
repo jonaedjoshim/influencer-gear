@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 75%;
     margin: 0 auto;
 }
 
@@ -54,6 +54,19 @@ body {
     border-style: none;
     display: flex;
     gap: 8px;
+}
+
+/* secondary button styles*/
+.second-button {
+    margin: 50px auto 100px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    background: none;
+    border-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 5px;
 }
 
 /* navbar styles */
@@ -118,4 +131,65 @@ nav {
 .hero-img {
     height: 414px;
     width: 440px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.sponsor-logo {
+    justify-content: space-evenly;
+    padding: 36px 62px;
+}
+
+/* card section styles */
+
+.cards {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.card {
+    height: 476px;
+    width: 329px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    text-align: left;
+    padding: 15px 17px;
+}
+
+.card-heading {
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 70px;
+}
+
+.card-img img {
+    margin-bottom: 16px;
+    height: 256px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.card-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: rgba(24, 25, 31, 1);
+    margin-bottom: 16px;
+}
+
+.card-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    margin-bottom: 16px;
 }
