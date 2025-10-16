@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* fonts styles */
 .inter {
     font-family: "Inter", sans-serif;
@@ -32,7 +37,25 @@
     display: flex;
 }
 
+.para {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 /* primary button */
+
+.primary-button {
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border-style: none;
+    display: flex;
+    gap: 8px;
+}
+
 /* navbar styles */
 header {
     margin: 120px;
@@ -41,17 +64,21 @@ header {
 nav {
     justify-content: space-between;
 }
+
 .brand-name {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .list li {
     list-style: none;
     margin-right: 34px;
 }
+
 .list ul {
     align-items: center;
 }
+
 .list ul a {
     text-decoration: none;
     color: rgba(58, 58, 58, 1);
@@ -59,7 +86,36 @@ nav {
     font-size: 1rem;
 }
 
-.list a img {
-    width: 38px;
-    height: 30px;
+
+/* hero styles */
+.hero {
+    justify-content: space-between;
+    align-items: center;
+    height: 475px;
+    margin: 80px auto 100px;
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.hero-content-container {
+    margin-right: 135px;
+    height: 270px;
+}
+
+.startup {
+    font-weight: 700;
+    font-size: 3.25rem;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.hero-content {
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.hero-img {
+    height: 414px;
+    width: 440px;
 }
