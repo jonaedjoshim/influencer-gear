@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-body> header, main {
+body>header,
+main {
     max-width: 75%;
     margin: 100px auto;
 }
@@ -94,6 +95,10 @@ nav {
     font-weight: 700;
 }
 
+.brand-name br {
+    display: none;
+}
+
 .list li {
     list-style: none;
     margin-right: 34px;
@@ -142,6 +147,11 @@ nav {
 .hero-img {
     height: 414px;
     width: 440px;
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
 }
 
 hr {
@@ -265,4 +275,49 @@ footer {
 .links i {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+@media screen and (max-width:576px) {
+
+    .display-flex {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 24px;
+        align-items: first baseline;
+    }
+
+    .brand br {
+        display: flex;
+    }
+
+    .list ul {
+        gap: 16px;
+        align-items: first baseline;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        height: 60vh;
+        background-position: top center;
+        background-size: contain;
+        margin: auto;
+        margin-top: 24px;
+        justify-content: center;
+        border: 3px solid oldlace;
+    }
+
+    .hero-img img {
+        height: 75%;
+        width: 75%;
+        margin: 50px;
+    }
+
+    .startup {
+        font-size: 2.5rem;
+    }
+    .para{
+        font-size: 0.9rem ;
+    }
 }
