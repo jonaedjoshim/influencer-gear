@@ -310,8 +310,8 @@ footer {
     .hero {
         flex-direction: column-reverse;
         height: 60vh;
-        background-position: top center;
-        background-size: contain;
+        background: none;
+        background-size: initial;
         margin: auto;
         margin-top: 24px;
         justify-content: center;
@@ -349,4 +349,12 @@ footer {
         padding: 0;
     }
 
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-container {
+        justify-content: first baseline;
+        align-items: start;
+    }
 }
